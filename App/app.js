@@ -23,7 +23,8 @@ addBtn.addEventListener('click', ()=>{
         <input type="text" name="expense-amount" id="expense-amount" placeholder="Amount($)">
         <button id="new-button">Add</button>
     </div>
-    <h3>Remaining balance: $<span id="remaining-balance"></span><h3>  `
+    <h3>Remaining balance: $<span id="remaining-balance"></span><h3>  
+    <button id="delete-button">Delete</button>`
 
     const modify = document.querySelector('.budget-area')
     modify.innerHTML = budgetPage
