@@ -32,5 +32,13 @@ addBtn.addEventListener('click', ()=>{
     remBal.innerHTML = balance
     const newBtn = document.querySelector('#new-button')
 
+    newBtn.addEventListener('click', ()=>{
+        newExpense = document.querySelector('#new-expense').value
+        expenseAmount = parseFloat(document.querySelector('#expense-amount').value)
+        balance -=expenseAmount
+        const item = document.querySelector('.budget-items')
+        item.insertAdjacentHTML('beforeend', 
+        '<li class="budget-list">' + '<div>' + newExpense + '</div>' + '<div>' + '$' + expenseAmount + '<div>' + '</li>')
+    })
 
-}
+})
