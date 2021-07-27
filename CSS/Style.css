@@ -64,7 +64,6 @@ button{
     font-family: 'Prata', serif;
 }
 
-
 label{
     padding: 7px;
     color: #000000;
@@ -74,4 +73,33 @@ input{
     padding: 7px;
     margin-right: 10px;
     border-radius: 12px;
+}
+
+.create-budget-item{
+    margin-top: 15rem;
+}
+
+.budget-area h1{
+    font-size: 2rem;
+}
+
+section h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+#all-budgets{
+    margin: 3rem;
+}
+
+li{
+    list-style-type: none;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+li div{
+    display: inline;
+    margin: 5px;
+    padding-right: 10px;
 }
