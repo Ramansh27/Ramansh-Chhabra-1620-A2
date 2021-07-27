@@ -27,3 +27,10 @@ addBtn.addEventListener('click', ()=>{
 
     const modify = document.querySelector('.budget-area')
     modify.innerHTML = budgetPage
+
+    const remBal = document.querySelector('#remaining-balance')
+    remBal.innerHTML = balance
+    const newBtn = document.querySelector('#new-button')
+
+
+}
