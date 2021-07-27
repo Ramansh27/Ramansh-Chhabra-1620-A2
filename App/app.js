@@ -56,4 +56,29 @@ addBtn.addEventListener('click', ()=>{
         console.log(budgetList)
     })
 
+    const allBuds = document.querySelector('#all-budgets')
+
+    allBuds.addEventListener('click', ()=>{
+        const page = `
+            <div class="create-budget">
+                <label for="expense-info" class="input-label">Expense Title</label>
+                <input type="text" name="expense-info" id="expense-info">
+                <label for="expense-amount" class="input-label">Amount</label>
+                <input type="text" name="expense-amount" id="expense-amount" >
+                <button id="new-button">New Budget</button>
+            </div>`
+        budgetArea.innerHTML = page
+        budgetArea.insertAdjacentHTML('afterend',`<section class="budget-area" id="saved-notes"></section>`)      
+    })
+
+    allBuds.addEventListener('click',()=>{
+        const notes = document.querySelector('#saved-notes')
+        for (let i=0;i<budgetList;i++){
+            notes.innerHTML = `<div>
+                <h1>${budgetList[i].name}</h1>
+                <h2>${budgetList[i].balLeft}</h2>
+            </div>`
+        }
+    })
+
 })
