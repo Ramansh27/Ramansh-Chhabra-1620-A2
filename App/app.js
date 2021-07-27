@@ -45,4 +45,15 @@ addBtn.addEventListener('click', ()=>{
         remBal.innerHTML = balance
     })
 
+    const allLi = document.querySelectorAll('.budget-list')
+    newBtn.addEventListener('click', ()=>{
+        arrayEntry = {
+            name: title,
+            items: allLi,
+            balLeft: balance
+        }
+        budgetList.push(arrayEntry)
+        console.log(budgetList)
+    })
+
 })
