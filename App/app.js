@@ -41,4 +41,8 @@ addBtn.addEventListener('click', ()=>{
         '<li class="budget-list">' + '<div>' + newExpense + '</div>' + '<div>' + '$' + expenseAmount + '<div>' + '</li>')
     })
 
+    newBtn.addEventListener('click', ()=>{
+        remBal.innerHTML = balance
+    })
+
 })
